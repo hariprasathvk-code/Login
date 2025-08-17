@@ -27,23 +27,7 @@ void Attempts() {
     }
 }
 
-// Function for login
-void Login() {
-    string user, pass;
-    cout << "\nLogin Attempt " << (attempts + 1) << endl;
-    cout << "Enter username: ";
-    cin >> user;
-    cout << "Enter password: ";
-    cin >> pass;
 
-    if (user == USERNAME && pass == PASSWORD) {
-        GrantAccess();
-    } else {
-        cout << "Invalid credentials!" << endl;
-        attempts++;
-        Attempts();  // Go back and check attempts again
-    }
-}
 
 // Function to lock account
 void LockAccount() {
