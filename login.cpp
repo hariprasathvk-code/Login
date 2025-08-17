@@ -45,4 +45,14 @@ void Login() {
     }
 }
 
+// Function to lock account
+void LockAccount() {
+    accountLocked = true;
+    cout << "\nAccount Locked due to too many failed attempts!" << endl;
+    cout << "Alert: User has been notified." << endl;
+}
 
+// Function to grant access
+void GrantAccess() {
+    cout << "\nLogin Successful! Access Granted." << endl;
+}
